@@ -2,27 +2,56 @@ import React from "react";
 import MapView from "react-native-maps";
 import { StyleSheet, View, Dimensions } from "react-native";
 
-const texasRegion = {
-  latitude: 31.9686,
-  longitude: -99.9018,
-  latitudeDelta: 10, // Ajusta este valor según el nivel de zoom deseado
-  longitudeDelta: 10,
-};
+mapStyle = [
+  {
+    featureType: "administrative",
+    elementType: "geometry",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+  {
+    featureType: "poi",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+  {
+    featureType: "road",
+    elementType: "labels.icon",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+  {
+    featureType: "transit",
+    stylers: [
+      {
+        visibility: "off",
+      },
+    ],
+  },
+];
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View style={estilos.container}>
       <MapView
-        style={styles.map}
+        style={estilos.map}
         provider="google"
-        initialRegion={texasRegion}
-        mapType="terrain"
+        customMapStyle={mapStyle}
       />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const estilos = StyleSheet.create({
   container: {
     flex: 1,
   },
