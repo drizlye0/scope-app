@@ -1,2 +1,0 @@
-# doxer-app
-App Documentation
