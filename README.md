@@ -65,7 +65,7 @@ Para este proyecto recomiendo tener un conocimiento basico de la terminal, si es
 
 Tambien recomiendo usar la powershell que se encuentra en la tienda ya que la default de windows puede dar errores
 
-![Powershell](./assets/readme/powershell "Powershell on Microsoft Store")
+![Powershell](./assets/readme/pwshell.png "Powershell on Microsoft Store")
 
 **Linux/MacOS**
 
