@@ -95,4 +95,6 @@ Descargar Git en tu sistema
 
 ### GitHub
 
-Crearte una cuenta si no la tienes
+- Crearte una cuenta si no la tienes
+- Clonar el repositorio ( git clone https://github.com/drizlye0/doxer-app.git -> pegar esto en tu shell)
+
