@@ -6,7 +6,7 @@
 - git clone git@github.com:drizlye0/doxer-app.git
 
 **Leer la Documentacion del Proyecto**
-[Documentation](./guides/Documentation.md)
+- [Documentation](./guides/Documentation.md)
 
 **Guia rapida de como usar Git y GitHub**
-[Guia Git](./guides/GitHub.md)
+- [Guia Git](./guides/GitHub.md)

@@ -17,9 +17,9 @@
 - Descargar el instalador para tu sistema(Windows/Linux/MacOS).
 - Ejecutar el instalador y seguir los pasos.
 - Una vez terminado ejecutar tu powershell/cmd/zsh/bash y escribir los siguientes comandos.
-![Node Version](./assets/readme/node.png "Node Verify Version")
+![Node Version](../assets/readme/node.png "Node Verify Version")
 
-![npm Version](./assets/readme/npm.png "npm Verify Version")
+![npm Version](../assets/readme/npm.png "npm Verify Version")
 
 
 ## Genymotion(Android Emulator)
@@ -32,14 +32,14 @@
 - Necesitaras logearte con tu account, si no tienes podras crear una 
 - Crear e instalar una version de android pulsando el + (recomiendo usar google pixel 3 con android 10)
 
-![Genymotion add phone](./assets/readme/addPhone.png "Add Phone")
+![Genymotion add phone](../assets/readme/addPhone.png "Add Phone")
 
 - Si lo deseas puedes limitar la cantidad de ram y nucleos de procesador que usara genymotion para virtualizar android
 
-![Genymotion edit phone](./assets/readme/modifiyPropierties.png "Edit Phone")
+![Genymotion edit phone](../assets/readme/modifiyPropierties.png "Edit Phone")
 
 - Activar los servicios de google para el uso de maps
-![Genymotion Google Services](./assets/readme/Gapps.png "Enable Google Services")
+![Genymotion Google Services](../assets/readme/Gapps.png "Enable Google Services")
 
 ## Android Studio
 
@@ -61,11 +61,11 @@ Recomiendo usar Vscode para este proyecto por la ventaja de ser muy facil de ins
 
 Para este proyecto recomiendo tener un conocimiento basico de la terminal, si estas en windows es recomendado usar powershell y la terminal oficial de window en su tienda
 
-![Terminal](./assets/readme/terminal_store.png "Terminal on Microsoft Store")
+![Terminal](../assets/readme/terminal_store.png "Terminal on Microsoft Store")
 
 Tambien recomiendo usar la powershell que se encuentra en la tienda ya que la default de windows puede dar errores
 
-![Powershell](./assets/readme/pwshell.png "Powershell on Microsoft Store")
+![Powershell](../assets/readme/pwshell.png "Powershell on Microsoft Store")
 
 **Linux/MacOS**
 
@@ -74,9 +74,9 @@ Asegurate de tener el PATH de Android Studio en tu shell(solo en linux)
 
 PATH
 
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+- export ANDROID_HOME=$HOME/Android/Sdk
+- export PATH=$PATH:$ANDROID_HOME/emulator
+- export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 ## Git y GitHub
 
