@@ -3,7 +3,7 @@
 ## Guia de inicio
 
 **Clonar el repositorio con git**
-- git clone git@github.com:drizlye0/doxer-app.git
+- git clone https://github.com/drizlye0/doxer-app.git
 
 **Leer la Documentacion del Proyecto**
 - [Documentation](./guides/Documentation.md)
