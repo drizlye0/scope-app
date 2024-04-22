@@ -1,57 +1,19 @@
 import React from "react";
 import MapView from "react-native-maps";
-import { StyleSheet, View, Dimensions } from "react-native";
-
-mapStyle = [
-  {
-    featureType: "administrative",
-    elementType: "geometry",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "poi",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road",
-    elementType: "labels.icon",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "transit",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-];
+import { StyleSheet, View } from "react-native";
 
 export default function App() {
   return (
-    <View style={estilos.container}>
+    <View style={styles.container}>
       <MapView
-        style={estilos.map}
+        style={styles.map}
         provider="google"
-        customMapStyle={mapStyle}
       />
     </View>
   );
 }
 
-const estilos = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
