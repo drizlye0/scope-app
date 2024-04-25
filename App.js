@@ -1,62 +1,39 @@
-import React from "react";
-import MapView from "react-native-maps";
-import { StyleSheet, View, Dimensions } from "react-native";
+import React, { Component } from 'react'
+import { View, StyleSheet } from 'react-native'
+import MapView from 'react-native-maps'
 
-mapStyle = [
-  {
-    featureType: "administrative",
-    elementType: "geometry",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "poi",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "road",
-    elementType: "labels.icon",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "transit",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-];
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      initalRegion: {
+        latitude: 25.9018,
+        longitude: -97.4975,
+      }
+    }
+  }
 
-export default function App() {
-  return (
-    <View style={estilos.container}>
-      <MapView
-        style={estilos.map}
-        provider="google"
-        customMapStyle={mapStyle}
-      />
-    </View>
-  );
+  render() {
+    return (
+      <View style={styles.container}>
+        <MapView
+          style={styles.map}
+          initialRegion={this.state}
+        />
+      </View>
+    )
+  }
+
+
 }
 
-const estilos = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
   map: {
-    width: "100%",
-    height: "100%",
-  },
-});
+    flex: 1,
+  }
+})
+
+export default App
