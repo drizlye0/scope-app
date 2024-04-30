@@ -1,25 +1,14 @@
 import React from 'react'
 import { View, Text } from 'react-native'
+import styles from '../styles'
+import BoxContainer from './BoxContainer'
 
 const ColorIndexView = () => {
   return (
-    <View
-      style={
-        {
-          position: "absolute",
-          alignItems: "center",
-          justifyContent: "center",
-          width: 200,
-          height: 200,
-          right: 30,
-          bottom: 50,
-          backgroundColor: "#FAF9F6",
-          borderRadius: 20,
-        }
-      }
-    >
-      <Text>Red: Danger</Text>
-      <Text>Yellow: Warning</Text>
+    <View style={styles.modal}>
+      <BoxContainer color={"#ff0000"} text={"Danger"}/>
+      <BoxContainer color={"#Ffff00"} text={"Warning"}/>
+      <BoxContainer color={"green"} text={"Safe"}/>
     </View>
   )
 }
