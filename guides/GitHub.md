@@ -1,6 +1,7 @@
 # Como usar git para el desarrollo
 
 **Comandos de git explicados**
+
 ```
 git clone git@github.com:drizlye0/doxer-app.git
 ```
