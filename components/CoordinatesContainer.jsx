@@ -34,7 +34,32 @@ const Coordinates = {
     strokeColor: colors.red.strokeColor,
     fillColor: colors.red.fillColor,
     strokeWidth: colors.red.strokeWidth
-  }
+  },
+
+  lauroVillar: {
+    coordinates: [
+      { latitude: 25.85277293876976, longitude: -97.47245326638222 },
+      { latitude: 25.85277293876976, longitude: -97.47245326638222 },
+      { latitude: 25.84020348502562, longitude: -97.4700003862381 },
+      { latitude: 25.843245115407726, longitude: -97.45768569409849 }
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+
+  lasAmericas: {
+    coordinates: [
+      { latitude: 25.83994850352933, longitude: -97.46991254389286 },
+      { latitude: 25.841352252833357, longitude: -97.45767027139664 },
+      { latitude: 25.83727342784412, longitude: -97.45749391615391 },
+      { latitude: 25.835840057273607, longitude: -97.46900964528322 }
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+
 }
 
 export default Coordinates
