@@ -60,6 +60,19 @@ const Coordinates = {
     strokeWidth: colors.red.strokeWidth
   },
 
+  losPalamares: {
+    coordinates: [
+      { latitude: 25.849963920044345, longitude: -97.55720900886024},
+      { latitude: 25.83927869608965, longitude: -97.55692030997898},
+      { latitude: 25.83727342784412, longitude: -97.45749391615391 },
+      { latitude: 25.835840057273607, longitude: -97.46900964528322 }
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+
+
 }
 
 export default Coordinates
