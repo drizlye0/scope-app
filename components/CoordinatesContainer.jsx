@@ -59,20 +59,97 @@ const Coordinates = {
     fillColor: colors.red.fillColor,
     strokeWidth: colors.red.strokeWidth
   },
-
-  losPalamares: {
+  arboledas: {
     coordinates: [
-      { latitude: 25.849963920044345, longitude: -97.55720900886024},
-      { latitude: 25.83927869608965, longitude: -97.55692030997898},
-      { latitude: 25.83727342784412, longitude: -97.45749391615391 },
-      { latitude: 25.835840057273607, longitude: -97.46900964528322 }
+      { "latitude": 25.86673786731479, "longitude": -97.47727755457163 },
+      { "latitude": 25.873508997970706, "longitude": -97.47432745993137 },
+      { "latitude": 25.87260368905199, "longitude": -97.46255591511726 },
+      { "latitude": 25.861225648185318, "longitude": -97.46762730181217 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+  campestreDelRio1: {
+    coordinates: [
+      { "latitude": 25.86129926278841, "longitude": -97.46751330792902 },
+      { "latitude": 25.862789948636824, "longitude": -97.46638745069504 },
+      { "latitude": 25.863405103740583, "longitude": -97.45539743453264 },
+      { "latitude": 25.854566052237924, "longitude": -97.4556562677026 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+  adolfoLopezMateos: {
+    coordinates: [
+      { "latitude": 25.8725599468592, "longitude": -97.48951178044081 },
+      { "latitude": 25.87840406200236, "longitude": -97.48598065227269 },
+      { "latitude": 25.87493044869232, "longitude": -97.4758368730545 },
+      { "latitude": 25.867736441160208, "longitude": -97.4795688316226 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+  privanzasDelRio: {
+    coordinates: [
+      { "latitude": 25.877086423750768, "longitude": -97.49726369976997 },
+      { "latitude": 25.884364924445368, "longitude": -97.48787496238948 },
+      { "latitude": 25.878255345783582, "longitude": -97.4868708103895 },
+      { "latitude": 25.873006116465497, "longitude": -97.48987052589654 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+  modelo: {
+    coordinates: [
+      { "latitude": 25.868057129399567, "longitude": -97.49281659722328 },
+      { "latitude": 25.872637476113933, "longitude": -97.4895292147994 },
+      { "latitude": 25.87966949973634, "longitude": -97.50339690595865 },
+      { "latitude": 25.87136985133125, "longitude": -97.50395983457564 },
     ],
     strokeColor: colors.red.strokeColor,
     fillColor: colors.red.fillColor,
     strokeWidth: colors.red.strokeWidth
   },
 
+  lucero: {
+    coordinates: [
+      { "latitude": 25.861196986749572, "longitude": -97.503191716969 },
+      { "latitude": 25.859129121247385, "longitude": -97.49106109142305 },
+      { "latitude": 25.86626934924572, "longitude": -97.48875908553599 },
+      { "latitude": 25.871166824965606, "longitude": -97.50376470386982 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
 
+  satelite: {
+    coordinates: [
+      { "latitude": 25.84431690938431, "longitude": -97.50705845654011 },
+      { "latitude": 25.861005105800768, "longitude": -97.50352397561075 },
+      { "latitude": 25.85925372519725, "longitude": -97.49115396291018 },
+      { "latitude": 25.846068209499037, "longitude": -97.49146711081266 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+
+  lomasDeSanJuan: {
+    coordinates: [
+      { "latitude": 25.823630959274173, "longitude": -97.50156462192534 },
+      { "latitude": 25.824059507655473, "longitude": -97.480650767684 },
+      { "latitude": 25.837162078204976, "longitude": -97.47958928346634 },
+      { "latitude": 25.83768231247649, "longitude": -97.49666053801775 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
 }
 
 export default Coordinates
