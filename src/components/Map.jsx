@@ -4,7 +4,7 @@ import mapStyle from "../styles/mapStyle";
 import styles from "../styles";
 import Coordinates from "./CoordinatesContainer";
 
-function Map() {
+function Map({showTopBar}) {
 
   const regionCity = {
     latitude: 25.871484185490594,
@@ -30,6 +30,7 @@ function Map() {
             strokeWidth={Coordinates[city].strokeWidth}
             coordinates={Coordinates[city].coordinates}
             tappable={true}
+            onPress={showTopBar}
           />
         ))}
       </MapView>
