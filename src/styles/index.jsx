@@ -8,15 +8,16 @@ const styles = StyleSheet.create({
 
   container: {
     flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
   modal: {
     position: "absolute",
-    alignItems: "flex-start",
-    justifyContent: "center",
-    width: 200,
+    alignSelf: 'center',
+    justifyContent: 'center',
+    width: 140,
     height: 100,
-    right: 30,
-    bottom: 50,
+    bottom: 90,
     backgroundColor: "#F6F5F2",
     borderRadius: 20,
     borderColor: 'rgba(0,0,0,0.2)',

@@ -4,16 +4,23 @@ import Map from './components/Map'
 import { View } from 'react-native'
 import ColorIndexView from './components/ColorIndexView'
 import TopBarContainer from './components/TopBarContainer'
+import ButtonFaq from './components/ButtonFaq'
 
 export const Main = () => {
-  const [isVisible, SetModalVisible] = React.useState(false)
+
+  const [isVisible, SetVisible] = React.useState(false)
+  const [modalVisible, SetModalVisible] = React.useState(false)
+
   return (
     <View style={styles.container}>
       <Map
-       showTopBar={() => SetModalVisible(!isVisible)}  
+       showTopBar={() => SetVisible(!isVisible)}  
       />
       {isVisible && <TopBarContainer/>}
-      <ColorIndexView />
+      <ButtonFaq 
+        onPress={() => SetModalVisible(!modalVisible)}
+      />
+      {modalVisible && <ColorIndexView/>}
     </View>
   )
 }
