@@ -13,7 +13,6 @@ function Map() {
     longitudeDelta: 0.05
   }
 
-
   return (
     <>
       <MapView
@@ -30,9 +29,9 @@ function Map() {
             fillColor={Coordinates[city].fillColor}
             strokeWidth={Coordinates[city].strokeWidth}
             coordinates={Coordinates[city].coordinates}
-          ></Polygon>
+            tappable={true}
+          />
         ))}
-
       </MapView>
     </>
   )
