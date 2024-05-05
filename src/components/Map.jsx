@@ -4,13 +4,17 @@ import mapStyle from "../styles/mapStyle";
 import styles from "../styles";
 import Coordinates from "./CoordinatesContainer";
 
-function Map({showTopBar}) {
+function Map({ showTopBar, onSelectZone }) {
 
   const regionCity = {
     latitude: 25.871484185490594,
     longitude: -97.504314891994,
     latitudeDelta: 0.05,
     longitudeDelta: 0.05
+  }
+
+  const handlePolygonPress = (city) => {
+    onSelectZone(Coordinates[city].name)
   }
 
   return (
@@ -20,7 +24,7 @@ function Map({showTopBar}) {
         style={styles.map}
         customMapStyle={mapStyle}
         initialRegion={regionCity}
-        onPress={e => console.log(e.nativeEvent)}
+        onPress={showTopBar}
       >
         {Object.keys(Coordinates).map(city => (
           <Polygon
@@ -30,7 +34,7 @@ function Map({showTopBar}) {
             strokeWidth={Coordinates[city].strokeWidth}
             coordinates={Coordinates[city].coordinates}
             tappable={true}
-            onPress={showTopBar}
+            onPress={() => handlePolygonPress(city)}
           />
         ))}
       </MapView>

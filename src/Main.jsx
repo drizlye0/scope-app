@@ -8,19 +8,29 @@ import ButtonFaq from './components/ButtonFaq'
 
 export const Main = () => {
 
-  const [isVisible, SetVisible] = React.useState(false)
-  const [modalVisible, SetModalVisible] = React.useState(false)
+  const [isVisible, setVisible] = React.useState(false)
+  const [modalVisible, setModalVisible] = React.useState(false)
+  const [selectedZone, setSelectedZone] = React.useState(null)
+
+  const handleZonePress = (zone) => {
+    setSelectedZone(zone)
+    setVisible(true)
+  }
 
   return (
     <View style={styles.container}>
       <Map
-       showTopBar={() => SetVisible(!isVisible)}  
+        showTopBar={() => setVisible(false)}
+        onSelectZone={handleZonePress}
       />
-      {isVisible && <TopBarContainer/>}
-      <ButtonFaq 
-        onPress={() => SetModalVisible(!modalVisible)}
+
+      {isVisible && <TopBarContainer zone={selectedZone} />}
+
+
+      <ButtonFaq
+        onPress={() => setModalVisible(!modalVisible)}
       />
-      {modalVisible && <ColorIndexView/>}
+      {modalVisible && <ColorIndexView />}
     </View>
   )
 }

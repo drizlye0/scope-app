@@ -2,11 +2,11 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
 
-const TopBarContainer = () => {
+const TopBarContainer = ({ zone }) => {
 
   return (
     <View style={styles.topBar}>
-      <Text>¡Hola Mundo!</Text>
+      <Text style={styles.text}>this zone is {zone}</Text>
     </View>
   );
 };
@@ -20,5 +20,8 @@ const styles = StyleSheet.create({
     padding: 20,
     marginTop: Constants.statusBarHeight,
   },
+  text: {
+    color: "#fff",
+  }
 })
 export default TopBarContainer

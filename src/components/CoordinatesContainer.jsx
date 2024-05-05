@@ -14,6 +14,7 @@ const colors = {
 
 const Coordinates = {
   portales: {
+    name: "Portales",
     coordinates: [
       { latitude: 25.85338150817608, longitude: -97.49098163098097 },
       { latitude: 25.84614666134398, longitude: -97.4911093711853 },
@@ -22,9 +23,10 @@ const Coordinates = {
     ],
     strokeColor: colors.yellow.strokeColor,
     fillColor: colors.yellow.fillColor,
-    strokeWidth: colors.yellow.strokeWidth
+    strokeWidth: colors.yellow.strokeWidth,
   },
   independencia: {
+    name: "Independencia",
     coordinates: [
       { latitude: 25.84844737019477, longitude: -97.48181967611444 },
       { latitude: 25.852734234568214, longitude: -97.47250913768346 },
@@ -33,10 +35,11 @@ const Coordinates = {
     ],
     strokeColor: colors.red.strokeColor,
     fillColor: colors.red.fillColor,
-    strokeWidth: colors.red.strokeWidth
+    strokeWidth: colors.red.strokeWidth,
   },
 
   lauroVillar: {
+    name: "Lauro Villar",
     coordinates: [
       { latitude: 25.85277293876976, longitude: -97.47245326638222 },
       { latitude: 25.85277293876976, longitude: -97.47245326638222 },
@@ -45,10 +48,11 @@ const Coordinates = {
     ],
     strokeColor: colors.red.strokeColor,
     fillColor: colors.red.fillColor,
-    strokeWidth: colors.red.strokeWidth
+    strokeWidth: colors.red.strokeWidth,
   },
 
   lasAmericas: {
+    name: "Las Americas",
     coordinates: [
       { latitude: 25.83994850352933, longitude: -97.46991254389286 },
       { latitude: 25.841352252833357, longitude: -97.45767027139664 },
@@ -57,9 +61,10 @@ const Coordinates = {
     ],
     strokeColor: colors.red.strokeColor,
     fillColor: colors.red.fillColor,
-    strokeWidth: colors.red.strokeWidth
+    strokeWidth: colors.red.strokeWidth,
   },
   arboledas: {
+    name: "Arboledas",
     coordinates: [
       { "latitude": 25.86673786731479, "longitude": -97.47727755457163 },
       { "latitude": 25.873508997970706, "longitude": -97.47432745993137 },
@@ -71,6 +76,7 @@ const Coordinates = {
     strokeWidth: colors.red.strokeWidth
   },
   campestreDelRio1: {
+    name: "Campestre Del Rio 1",
     coordinates: [
       { "latitude": 25.86129926278841, "longitude": -97.46751330792902 },
       { "latitude": 25.862789948636824, "longitude": -97.46638745069504 },
@@ -82,6 +88,7 @@ const Coordinates = {
     strokeWidth: colors.red.strokeWidth
   },
   adolfoLopezMateos: {
+    name: "Adolfo Lopez Mateos",
     coordinates: [
       { "latitude": 25.8725599468592, "longitude": -97.48951178044081 },
       { "latitude": 25.87840406200236, "longitude": -97.48598065227269 },
@@ -93,6 +100,7 @@ const Coordinates = {
     strokeWidth: colors.red.strokeWidth
   },
   privanzasDelRio: {
+    name: "Privanzas Del Rio",
     coordinates: [
       { "latitude": 25.877086423750768, "longitude": -97.49726369976997 },
       { "latitude": 25.884364924445368, "longitude": -97.48787496238948 },
@@ -104,6 +112,7 @@ const Coordinates = {
     strokeWidth: colors.red.strokeWidth
   },
   modelo: {
+    name: "Modelo",
     coordinates: [
       { "latitude": 25.868057129399567, "longitude": -97.49281659722328 },
       { "latitude": 25.872637476113933, "longitude": -97.4895292147994 },
@@ -116,6 +125,7 @@ const Coordinates = {
   },
 
   lucero: {
+    name: "Lucero",
     coordinates: [
       { "latitude": 25.861196986749572, "longitude": -97.503191716969 },
       { "latitude": 25.859129121247385, "longitude": -97.49106109142305 },
@@ -128,6 +138,7 @@ const Coordinates = {
   },
 
   satelite: {
+    name: "Satelite",
     coordinates: [
       { "latitude": 25.84431690938431, "longitude": -97.50705845654011 },
       { "latitude": 25.861005105800768, "longitude": -97.50352397561075 },
@@ -140,6 +151,7 @@ const Coordinates = {
   },
 
   lomasDeSanJuan: {
+    name: "Lomas De San Juan",
     coordinates: [
       { "latitude": 25.823630959274173, "longitude": -97.50156462192534 },
       { "latitude": 25.824059507655473, "longitude": -97.480650767684 },
