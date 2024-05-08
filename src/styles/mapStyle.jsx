@@ -1,10 +1,36 @@
 const mapStyle = [
   {
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
     "featureType": "landscape.man_made",
     "elementType": "geometry.fill",
     "stylers": [
       {
         "color": "#f5f3f3"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
       }
     ]
   },
@@ -43,8 +69,14 @@ const mapStyle = [
         "color": "#b4c4cc"
       }
     ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
   }
 ]
-
-
 export default mapStyle
