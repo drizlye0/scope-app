@@ -1,43 +1,65 @@
-import React from "react";
-import MapView, { Polygon } from "react-native-maps";
-import mapStyle from "../styles/mapStyle";
-import styles from "../styles";
-import Coordinates from "./CoordinatesContainer";
+import React, { useEffect } from 'react'
+import MapContainer from './MapContainer'
+import TopBarContainer from './TopBarContainer'
+import { useState } from 'react'
+import { Animated, Easing } from 'react-native'
 
-function Map({ showTopBar, onSelectZone }) {
+const Map = () => {
 
-  const regionCity = {
-    latitude: 25.871484185490594,
-    longitude: -97.504314891994,
-    latitudeDelta: 0.05,
-    longitudeDelta: 0.05
+  const [selectedZone, setSelectedZone] = useState(null)
+  const [animation] = useState(new Animated.Value(0))
+  const [isTopBarVisible, setTopBarVisible] = useState(false)
+
+  useEffect(() => {
+    animateTopBar(isTopBarVisible ? 1 : 0, () => {
+      if (!isTopBarVisible) {
+        setSelectedZone(null)
+      }
+    })
+  }, [isTopBarVisible])
+
+  const handleZonePress = (zone) => {
+    if (zone === selectedZone) {
+      setTopBarVisible(false)
+    } else {
+      setSelectedZone(zone)
+      setTopBarVisible(true)
+    }
   }
 
-  const handlePolygonPress = (city) => {
-    onSelectZone(Coordinates[city].name)
+  const animateTopBar = (value, callback) => {
+    Animated.timing(animation, {
+      toValue: value,
+      duration: 300,
+      easing: Easing.ease,
+      useNativeDriver: true
+    }).start(callback)
   }
 
   return (
     <>
-      <MapView
-        provider="google"
-        style={styles.map}
-        customMapStyle={mapStyle}
-        initialRegion={regionCity}
-        onPress={showTopBar}
+      <MapContainer
+        onSelectZone={handleZonePress}
+      />
+      <Animated.View
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          opacity: animation,
+          transform: [
+            {
+              translateY: animation.interpolate({
+                inputRange: [0, 1],
+                outputRange: [-100, 0],
+              }),
+            },
+          ],
+        }}
       >
-        {Object.keys(Coordinates).map(city => (
-          <Polygon
-            key={city}
-            strokeColor={Coordinates[city].strokeColor}
-            fillColor={Coordinates[city].fillColor}
-            strokeWidth={Coordinates[city].strokeWidth}
-            coordinates={Coordinates[city].coordinates}
-            tappable={true}
-            onPress={() => handlePolygonPress(city)}
-          />
-        ))}
-      </MapView>
+        <TopBarContainer zone={selectedZone} />
+      </Animated.View>
     </>
   )
 }

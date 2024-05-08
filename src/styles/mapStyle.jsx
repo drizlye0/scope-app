@@ -1,38 +1,50 @@
 const mapStyle = [
   {
-    featureType: "administrative",
-    elementType: "geometry",
-    stylers: [
+    "featureType": "landscape.man_made",
+    "elementType": "geometry.fill",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "color": "#f5f3f3"
+      }
+    ]
   },
   {
-    featureType: "poi",
-    stylers: [
+    "featureType": "road.arterial",
+    "elementType": "geometry.fill",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "color": "#b4c4cc"
+      }
+    ]
   },
   {
-    featureType: "road",
-    elementType: "labels.icon",
-    stylers: [
+    "featureType": "road.highway",
+    "elementType": "geometry.fill",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "color": "#7494b4"
+      }
+    ]
   },
   {
-    featureType: "transit",
-    stylers: [
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
       {
-        visibility: "off",
-      },
-    ],
+        "color": "#7494b4"
+      }
+    ]
   },
-];
+  {
+    "featureType": "road.local",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#b4c4cc"
+      }
+    ]
+  }
+]
+
 
 export default mapStyle

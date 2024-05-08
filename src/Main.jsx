@@ -1,27 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './styles'
-import Map from './components/Map'
 import { View } from 'react-native'
-import TopBarContainer from './components/TopBarContainer'
-import MapLegend from './components/MapLegendContainer'
+import MapLegend from './components/MapLegend'
+import Map from './components/Map'
 
 export const Main = () => {
 
-  const [isVisible, setVisible] = useState(false)
-  const [selectedZone, setSelectedZone] = useState(null)
-
-  const handleZonePress = (zone) => {
-    setSelectedZone(zone)
-    setVisible(true)
-  }
-
   return (
     <View style={styles.container}>
-      <Map
-        showTopBar={() => setVisible(false)}
-        onSelectZone={handleZonePress}
-      />
-      {isVisible && <TopBarContainer zone={selectedZone} />}
+      <Map />
       <MapLegend />
     </View>
   )
