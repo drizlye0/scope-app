@@ -24,6 +24,7 @@ function MapContainer({ onSelectZone }) {
         style={styles.map}
         customMapStyle={mapStyle}
         initialRegion={regionCity}
+        onPress={e => console.log(e.nativeEvent)}
       >
         {Object.keys(Coordinates).map(city => (
           <Polygon

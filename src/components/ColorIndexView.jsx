@@ -6,9 +6,9 @@ import BoxContainer from './BoxContainer'
 const ColorIndexView = () => {
   return (
     <View style={styles.modal}>
-      <BoxContainer color={"#ff0000"} text={"Danger"}/>
-      <BoxContainer color={"#Ffff00"} text={"Warning"}/>
-      <BoxContainer color={"green"} text={"Safe"}/>
+      <BoxContainer color={"#ff0000"} text={"Peligroso"} />
+      <BoxContainer color={"orange"} text={"Inseguro"} />
+      <BoxContainer color={"#Ffff00"} text={"Cuidado"} />
     </View>
   )
 }

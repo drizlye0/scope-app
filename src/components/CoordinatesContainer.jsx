@@ -1,12 +1,17 @@
 const colors = {
   red: {
     strokeColor: "#ff0000",
-    fillColor: "rgba(255,41,41,0.1)",
+    fillColor: "rgba(255,41,41,0.2)",
     strokeWidth: 2
   },
   yellow: {
     strokeColor: "#Ffff00",
-    fillColor: "rgba(232, 245, 39, 0.1)",
+    fillColor: "rgba(232, 245, 39, 0.2)",
+    strokeWidth: 2
+  },
+  orange: {
+    strokeColor: "#FFA500",
+    fillColor: "rgba(255,165,0,0.2)",
     strokeWidth: 2
   }
 }
@@ -46,9 +51,9 @@ const Coordinates = {
       { latitude: 25.84020348502562, longitude: -97.4700003862381 },
       { latitude: 25.843245115407726, longitude: -97.45768569409849 }
     ],
-    strokeColor: colors.red.strokeColor,
-    fillColor: colors.red.fillColor,
-    strokeWidth: colors.red.strokeWidth,
+    strokeColor: colors.orange.strokeColor,
+    fillColor: colors.orange.fillColor,
+    strokeWidth: colors.orange.strokeWidth,
   },
 
   lasAmericas: {
@@ -59,9 +64,9 @@ const Coordinates = {
       { latitude: 25.83727342784412, longitude: -97.45749391615391 },
       { latitude: 25.835840057273607, longitude: -97.46900964528322 }
     ],
-    strokeColor: colors.red.strokeColor,
-    fillColor: colors.red.fillColor,
-    strokeWidth: colors.red.strokeWidth,
+    strokeColor: colors.yellow.strokeColor,
+    fillColor: colors.yellow.fillColor,
+    strokeWidth: colors.yellow.strokeWidth,
   },
   arboledas: {
     name: "Arboledas",
@@ -157,6 +162,45 @@ const Coordinates = {
       { "latitude": 25.824059507655473, "longitude": -97.480650767684 },
       { "latitude": 25.837162078204976, "longitude": -97.47958928346634 },
       { "latitude": 25.83768231247649, "longitude": -97.49666053801775 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+  popular: {
+    name: "Col.Popular",
+    coordinates: [
+      { "latitude": 25.848428983777815, "longitude": -97.48240526765586 },
+      { "latitude": 25.853024875418534, "longitude": -97.48319920152424 },
+      { "latitude": 25.853066814521128, "longitude": -97.48567655682565 },
+      { "latitude": 25.85838933915996, "longitude": -97.4826305732131 },
+      { "latitude": 25.85436842790721, "longitude": -97.47477438300848 },
+      { "latitude": 25.85155910952426, "longitude": -97.47565649449825 },
+    ],
+    strokeColor: colors.orange.strokeColor,
+    fillColor: colors.orange.fillColor,
+    strokeWidth: colors.orange.strokeWidth
+  },
+  cdIndustrial: {
+    name: "Ciudad Industrial",
+    coordinates: [
+      { "latitude": 25.838582457208208, "longitude": -97.44397927075624 },
+      { "latitude": 25.84650301310766, "longitude": -97.44328793138266 },
+      { "latitude": 25.83740439178422, "longitude": -97.42273986339569 },
+      { "latitude": 25.83586359486741, "longitude": -97.42310296744108 },
+    ],
+    strokeColor: colors.orange.strokeColor,
+    fillColor: colors.orange.fillColor,
+    strokeWidth: colors.orange.strokeWidth
+  },
+  cima3: {
+    name: "Cima 3",
+    coordinates: [
+      { "latitude": 25.83629209896165, "longitude": -97.43018869310617 },
+      { "latitude": 25.83710323485744, "longitude": -97.43774648755789 },
+      { "latitude": 25.827201444218986, "longitude": -97.4391794577241 },
+      { "latitude": 25.825755880073913, "longitude": -97.43752688169478 },
+      { "latitude": 25.824992953091545, "longitude": -97.43124917149545 },
     ],
     strokeColor: colors.red.strokeColor,
     fillColor: colors.red.fillColor,
