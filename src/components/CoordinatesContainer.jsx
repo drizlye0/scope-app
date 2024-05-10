@@ -17,8 +17,7 @@ const colors = {
 }
 
 
-const Coordinates = {
-  portales: {
+const Coordinates = { portales: {
     name: "Portales",
     coordinates: [
       { latitude: 25.85338150817608, longitude: -97.49098163098097 },
@@ -201,6 +200,96 @@ const Coordinates = {
       { "latitude": 25.827201444218986, "longitude": -97.4391794577241 },
       { "latitude": 25.825755880073913, "longitude": -97.43752688169478 },
       { "latitude": 25.824992953091545, "longitude": -97.43124917149545 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+  cima1: {
+    name: "Cima 1",
+    coordinates: [
+      { "latitude": 25.83720311765058, "longitude": -97.43887636810541 },
+      { "latitude": 25.838302124568077, "longitude": -97.44638085365295 },
+      { "latitude": 25.822868018598705, "longitude": -97.44664538651705 },
+      { "latitude": 25.821888079276658, "longitude": -97.44047295302153 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+  fundadores: {
+    name: "Fundadores",
+    coordinates: [
+      { "latitude": 25.827727456186263, "longitude": -97.45250467211008 },
+      { "latitude": 25.82772866332523, "longitude": -97.44689851999283 },
+      { "latitude": 25.83436502538938, "longitude": -97.44686264544725 },
+      { "latitude": 25.835088360629978, "longitude": -97.45214056223631 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+  tecnologico: {
+    name: "Fundadores",
+    coordinates: [
+      { "latitude": 25.828230530275786, "longitude": -97.45741378515959 },
+      { "latitude": 25.82785631819932, "longitude": -97.452961653471 },
+      { "latitude": 25.838770149950168, "longitude": -97.4520570784807 },
+      { "latitude": 25.838868522554524, "longitude": -97.45739568024874 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+  mexico: {
+    name: "Col.Mexico",
+    coordinates: [
+      { "latitude": 25.83603469492775, "longitude": -97.4642339721322 },
+      { "latitude": 25.82390921410398, "longitude": -97.46285263448954 },
+      { "latitude": 25.823725421128103, "longitude": -97.45739031583071 },
+      { "latitude": 25.83718742609954, "longitude": -97.45755393058062 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+  villaLasTorres: {
+    name: "Villa Las Torres",
+    coordinates: [
+      { "latitude": 25.810887575704715, "longitude": -97.51978553831577 },
+      { "latitude": 25.811152881917582, "longitude": -97.51212280243635 },
+      { "latitude": 25.815304137465382, "longitude": -97.50617366284132 },
+      { "latitude": 25.82289246416334, "longitude": -97.5018895044923 },
+      { "latitude": 25.82404230539119, "longitude": -97.51386087387802 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+  emilioPortes: {
+    name: "Emilio Portes G.",
+    coordinates: [
+      { "latitude": 25.844245999891367, "longitude": -97.50731460750103 },
+      { "latitude": 25.845863329243258, "longitude": -97.49159518629313 },
+      { "latitude": 25.83758092128982, "longitude": -97.49712187796831 },
+      { "latitude": 25.83161347447045, "longitude": -97.50094234943388 },
+      { "latitude": 25.82766770279303, "longitude": -97.50111870467663 },
+      { "latitude": 25.823439319179204, "longitude": -97.50178758054972 },
+      { "latitude": 25.824388462754975, "longitude": -97.51380454748869 },
+    ],
+    strokeColor: colors.red.strokeColor,
+    fillColor: colors.red.fillColor,
+    strokeWidth: colors.red.strokeWidth
+  },
+  tierraYLibertad: {
+    name: "Tierra Y Libertad",
+    coordinates: [
+      { "latitude": 25.82434047761851, "longitude": -97.48047307133675 },
+      { "latitude": 25.82879667468467, "longitude": -97.46526025235653 },
+      { "latitude": 25.836203682398843, "longitude": -97.46579132974149 },
+      { "latitude": 25.83576069330105, "longitude": -97.46895834803581 },
+      { "latitude": 25.84004959093384, "longitude": -97.47007012367249 },
+      { "latitude": 25.836872991118845, "longitude": -97.4795550853014 },
     ],
     strokeColor: colors.red.strokeColor,
     fillColor: colors.red.fillColor,
