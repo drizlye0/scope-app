@@ -4,7 +4,7 @@ import mapStyle from "../styles/mapStyle";
 import styles from "../styles";
 import Coordinates from "./CoordinatesContainer";
 
-function Map() {
+function MapContainer({ onSelectZone }) {
 
   const regionCity = {
     latitude: 25.871484185490594,
@@ -13,6 +13,9 @@ function Map() {
     longitudeDelta: 0.05
   }
 
+  const handlePolygonPress = (city) => {
+    onSelectZone(Coordinates[city].name)
+  }
 
   return (
     <>
@@ -30,12 +33,13 @@ function Map() {
             fillColor={Coordinates[city].fillColor}
             strokeWidth={Coordinates[city].strokeWidth}
             coordinates={Coordinates[city].coordinates}
-          ></Polygon>
+            tappable={true}
+            onPress={() => handlePolygonPress(city)}
+          />
         ))}
-
       </MapView>
     </>
   )
 }
 
-export default Map
+export default MapContainer
