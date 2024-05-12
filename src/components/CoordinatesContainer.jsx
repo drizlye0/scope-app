@@ -88,9 +88,9 @@ const Coordinates = {
       { "latitude": 25.863405103740583, "longitude": -97.45539743453264 },
       { "latitude": 25.854566052237924, "longitude": -97.4556562677026 },
     ],
-    strokeColor: colors.red.strokeColor,
-    fillColor: colors.red.fillColor,
-    strokeWidth: colors.red.strokeWidth
+    strokeColor: colors.orange.strokeColor,
+    fillColor: colors.orange.fillColor,
+    strokeWidth: colors.orange.strokeWidth
   },
   adolfoLopezMateos: {
     name: "Adolfo Lopez Mateos",
@@ -116,18 +116,25 @@ const Coordinates = {
     fillColor: colors.red.fillColor,
     strokeWidth: colors.red.strokeWidth
   },
-  modelo: {
-    name: "Modelo",
+
+  centro: {
+    name: "El Centro",
     coordinates: [
-      { "latitude": 25.868057129399567, "longitude": -97.49281659722328 },
-      { "latitude": 25.872637476113933, "longitude": -97.4895292147994 },
-      { "latitude": 25.87966949973634, "longitude": -97.50339690595865 },
-      { "latitude": 25.87136985133125, "longitude": -97.50395983457564 },
+      { "latitude": 25.870991552295017, "longitude": -97.50411473214625 },
+      { "latitude": 25.871275125848946, "longitude": -97.49963611364365 },
+      { "latitude": 25.87732986214463, "longitude": -97.49959252774715 },
+      { "latitude": 25.879653813821193, "longitude": -97.49792117625476 },
+      { "latitude": 25.897522641637664, "longitude": -97.49792117625476 },
+      { "latitude": 25.890394859707975, "longitude": -97.50506289303304 },
+      { "latitude": 25.885024006443714, "longitude": -97.51827511936426 },
+      { "latitude": 25.876372093572552, "longitude": -97.51794956624508 },
+      { "latitude": 25.876049919595523, "longitude": -97.51461692154408 },
     ],
     strokeColor: colors.red.strokeColor,
     fillColor: colors.red.fillColor,
     strokeWidth: colors.red.strokeWidth
   },
+
 
   lucero: {
     name: "Lucero",
@@ -137,9 +144,9 @@ const Coordinates = {
       { "latitude": 25.86626934924572, "longitude": -97.48875908553599 },
       { "latitude": 25.871166824965606, "longitude": -97.50376470386982 },
     ],
-    strokeColor: colors.red.strokeColor,
-    fillColor: colors.red.fillColor,
-    strokeWidth: colors.red.strokeWidth
+    strokeColor: colors.orange.strokeColor,
+    fillColor: colors.orange.fillColor,
+    strokeWidth: colors.orange.strokeWidth
   },
 
   satelite: {
@@ -155,18 +162,33 @@ const Coordinates = {
     strokeWidth: colors.red.strokeWidth
   },
 
-  lomasDeSanJuan: {
-    name: "Lomas De San Juan",
+  solidaridad: {
+    name: "Solidaridad",
     coordinates: [
-      { "latitude": 25.823630959274173, "longitude": -97.50156462192534 },
-      { "latitude": 25.824059507655473, "longitude": -97.480650767684 },
-      { "latitude": 25.837162078204976, "longitude": -97.47958928346634 },
-      { "latitude": 25.83768231247649, "longitude": -97.49666053801775 },
+      { "latitude": 25.83163761645445, "longitude": -97.48021624982357 },
+      { "latitude": 25.848425664726385, "longitude": -97.48201735317707 },
+      { "latitude": 25.845909796961255, "longitude": -97.49115563929081 },
+      { "latitude": 25.830132354334946, "longitude": -97.50079181045294 },
+    ],
+    strokeColor: colors.orange.strokeColor,
+    fillColor: colors.orange.fillColor,
+    strokeWidth: colors.orange.strokeWidth
+  },
+
+  lomasDeSanJuan: {
+    name: "Lomas de San Juan",
+    coordinates: [
+      { "latitude": 25.823314375706122, "longitude": -97.50139094889164 },
+      { "latitude": 25.82998086137733, "longitude": -97.50077337026596 },
+      { "latitude": 25.831587220057298, "longitude": -97.48003017157316 },
+      { "latitude": 25.82433474354428, "longitude": -97.48059444129467 },
+      { "latitude": 25.82141787452982, "longitude": -97.48189698904754 },
     ],
     strokeColor: colors.red.strokeColor,
     fillColor: colors.red.fillColor,
     strokeWidth: colors.red.strokeWidth
   },
+
   popular: {
     name: "Col.Popular",
     coordinates: [
@@ -226,9 +248,9 @@ const Coordinates = {
       { "latitude": 25.83436502538938, "longitude": -97.44686264544725 },
       { "latitude": 25.835088360629978, "longitude": -97.45214056223631 },
     ],
-    strokeColor: colors.red.strokeColor,
-    fillColor: colors.red.fillColor,
-    strokeWidth: colors.red.strokeWidth
+    strokeColor: colors.orange.strokeColor,
+    fillColor: colors.orange.fillColor,
+    strokeWidth: colors.orange.strokeWidth
   },
   tecnologico: {
     name: "Fundadores",
@@ -238,9 +260,9 @@ const Coordinates = {
       { "latitude": 25.838770149950168, "longitude": -97.4520570784807 },
       { "latitude": 25.838868522554524, "longitude": -97.45739568024874 },
     ],
-    strokeColor: colors.red.strokeColor,
-    fillColor: colors.red.fillColor,
-    strokeWidth: colors.red.strokeWidth
+    strokeColor: colors.orange.strokeColor,
+    fillColor: colors.orange.fillColor,
+    strokeWidth: colors.orange.strokeWidth
   },
   mexico: {
     name: "Col.Mexico",
@@ -278,9 +300,9 @@ const Coordinates = {
       { "latitude": 25.823439319179204, "longitude": -97.50178758054972 },
       { "latitude": 25.824388462754975, "longitude": -97.51380454748869 },
     ],
-    strokeColor: colors.red.strokeColor,
-    fillColor: colors.red.fillColor,
-    strokeWidth: colors.red.strokeWidth
+    strokeColor: colors.yellow.strokeColor,
+    fillColor: colors.yellow.fillColor,
+    strokeWidth: colors.yellow.strokeWidth
   },
   tierraYLibertad: {
     name: "Tierra Y Libertad",
@@ -292,9 +314,9 @@ const Coordinates = {
       { "latitude": 25.84004959093384, "longitude": -97.47007012367249 },
       { "latitude": 25.836872991118845, "longitude": -97.4795550853014 },
     ],
-    strokeColor: colors.red.strokeColor,
-    fillColor: colors.red.fillColor,
-    strokeWidth: colors.red.strokeWidth
+    strokeColor: colors.orange.strokeColor,
+    fillColor: colors.orange.fillColor,
+    strokeWidth: colors.orange.strokeWidth
   },
   mariano: {
     name: "Mariano Matamoros",
@@ -346,7 +368,7 @@ const Coordinates = {
     name: "San Francisco",
     coordinates: [
       { "latitude": 25.87646500500567, "longitude": -97.51817621290684 },
-      { "latitude": 25.87629517009049, "longitude": -97.50474739819765 },
+      { "latitude": 25.87088626789803, "longitude": -97.50427901744843 },
       { "latitude": 25.865089749487574, "longitude": -97.50397257506847 },
       { "latitude": 25.867279089352696, "longitude": -97.51860469579697 },
     ],
